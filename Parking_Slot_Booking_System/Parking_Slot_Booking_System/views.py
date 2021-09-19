@@ -1,3 +1,4 @@
+
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http.response import JsonResponse
@@ -144,5 +145,28 @@ def reset_password_2(request):
     return render(request, "reset_2.html")
 
 '''
+
 def index(response):
     return HttpResponse("Hello there mate!")
+
+'''
+from django.contrib import admin
+from django.urls import path
+from django.urls.resolvers import URLPattern
+from django.http import HttpResponse
+
+from . import views
+
+urlpatterns= [
+    path('admin/', admin.site.urls),
+    path('', views.login , name ='login.html')
+
+    
+
+]
+'''
+
+
+
+
+

@@ -1,11 +1,11 @@
-'''
+
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http.response import JsonResponse
 from django.shortcuts import render, redirect
 from rest_framework.views import APIView
 from django.http import HttpResponse
-
+'''
 from .mailer import (
     send_reset_pwd_mail,
     send_feedback_mail
@@ -163,6 +163,6 @@ urlpatterns= [
 '''
 
 
-def index():
-    return "hello"
+def index(request):
+    return HttpResponse("hello")
 

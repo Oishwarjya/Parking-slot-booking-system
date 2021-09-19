@@ -4,7 +4,7 @@ from django.http.response import JsonResponse
 from django.shortcuts import render, redirect
 from rest_framework.views import APIView
 from django.http import HttpResponse
-
+'''
 from .mailer import (
     send_reset_pwd_mail,
     send_feedback_mail
@@ -143,4 +143,6 @@ def reset_password_2(request):
 
     return render(request, "reset_2.html")
 
-
+'''
+def index(response):
+    return HttpResponse("Hello there mate!")

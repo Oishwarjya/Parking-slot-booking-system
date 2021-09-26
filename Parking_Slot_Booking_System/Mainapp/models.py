@@ -231,10 +231,10 @@ class UserEntry():
 
 
 
-s= UserEntry()
+#s= UserEntry()
 #print(S.check_user_exists(self,'aac@gmail.com'))
 # insert_user('Oishwarjya', 'ob7029@srmist.edu.in', 'apple123', '22 Nov 2001')
-s.insert_user('Aradhya', 'abc@gmail.com', 'balls', '23 Aug 2002')
+#s.insert_user('Aradhya', 'abc@gmail.com', 'balls', '23 Aug 2002')
 # print(check_hash('ob7029@srmist.edu.in', 'apple123'))
 # print(check_hash('nv9824@srmist.edu.in', 'abc123AB'))
 # print(check_hash('nv9824@srmist.edu.in', 'abc123ABC'))  

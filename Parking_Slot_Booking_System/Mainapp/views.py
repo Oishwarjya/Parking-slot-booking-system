@@ -3,16 +3,16 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http.response import JsonResponse
 from django.shortcuts import render, redirect
-from rest_framework.views import APIView
+#from rest_framework.views import APIView
 from django.http import HttpResponse
 '''
 from .mailer import (
     send_reset_pwd_mail,
     send_feedback_mail
 )
-
+'''
 from Mainapp import s, Entry
-
+'''
 def home(request):
     if(request.POST):
         
@@ -26,7 +26,7 @@ def home(request):
         
     return render(request, 'home.html')
 
-
+'''
 def login(request):
     if(request.POST):
 
@@ -86,7 +86,7 @@ def login(request):
             return render(request, "login.html", {'error': s.error})
         return render(request, "login.html")
 
-
+'''
 def reset_password_1(request):
     if(request.POST):
 
@@ -144,10 +144,10 @@ def reset_password_2(request):
 
     return render(request, "reset_2.html")
 
-'''
 
-def index(response):
-    return HttpResponse("Hello there mate!")
+'''
+def index(Httpresponse):
+    return HttpResponse('Hello you!')
 
 '''
 from django.contrib import admin
